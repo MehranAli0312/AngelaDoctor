@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AngelaDoctor</string>
+    <string name="loginTitle">Hello,\nWelcome to the login page</string>
+    <string name="icon_password_visible">Password Visible</string>
+    <string name="icon_password_hidden">Password Hidden</string>
+    <string name="login_password_label">Password</string>
 </resources>

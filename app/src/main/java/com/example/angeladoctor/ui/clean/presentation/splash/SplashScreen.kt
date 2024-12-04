@@ -38,7 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.angeladoctor.R
-import com.example.objectremovercompose.ui.navigations.NavRoute
+import com.example.angeladoctor.ui.topLevel.navigations.NavRoute
 import kotlinx.coroutines.delay
 
 
@@ -71,8 +71,8 @@ fun SplashScreen(
         val screenDuration = 10000L
         delay(screenDuration)
 
-//        navController.popBackStack()
-//        navController.navigate(NavRoute.HomeScreen.route)
+        navController.popBackStack()
+        navController.navigate(NavRoute.LoginScreen.route)
 
     }
 
@@ -105,8 +105,7 @@ fun SplashScreen(
 
 
     Column(
-        modifier = Modifier
-            .fillMaxSize(),
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -129,8 +128,7 @@ fun SplashScreen(
             Text(
                 text = stringResource(R.string.app_name),
                 style = MaterialTheme.typography.titleMedium.copy(
-                    fontSize = 22.sp,
-                    fontWeight = FontWeight.Black
+                    fontSize = 22.sp, fontWeight = FontWeight.Black
                 )
             )
         }
