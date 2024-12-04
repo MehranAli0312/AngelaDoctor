@@ -64,4 +64,20 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //    #compose navigation
+    implementation(libs.androidx.navigation)
+
+    //  #Retrofit
+    implementation(libs.squareup.retrofit)
+    implementation(libs.squareup.retrofit.gson)
+    implementation(libs.gson)
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.interceptor)
+
+    //   #shimmer
+    implementation(libs.shimmer.compose)
+
+//   #toast
+    implementation(libs.toast)
 }
