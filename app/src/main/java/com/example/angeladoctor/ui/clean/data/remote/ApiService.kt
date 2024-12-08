@@ -1,11 +1,9 @@
-package com.example.angeladoctor.ui.clean.data.remote;
+package com.example.angeladoctor.ui.clean.data.remote
 
-import retrofit2.Response;
-import retrofit2.http.GET;
+import com.example.angeladoctor.ui.clean.data.model.ResponseModel
+import retrofit2.http.GET
 
 interface ApiService {
-
-    @GET("")
-    suspend fun getAllProductListAPI() : Response<ObjectRemoverModel>
-
+    @GET("ab3ab2d4-87c2-4495-8164-86664b1195ec")
+    suspend fun fetchProblems(): ResponseModel
 }

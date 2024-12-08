@@ -5,6 +5,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.animation.AnimatedContentScope
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.core.tween
@@ -93,4 +94,12 @@ fun Context.isOnline(): Boolean {
         }
     }
     return false
+}
+
+fun Context.showToast(mess: String, duration: Int = Toast.LENGTH_LONG) {
+    Toast.makeText(this, mess, duration).show()
+}
+
+fun showLog(mess: String) {
+    Log.e("Mehran_TAG", "OR : $mess")
 }

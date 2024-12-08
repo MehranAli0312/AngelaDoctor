@@ -4,4 +4,7 @@
     <string name="icon_password_visible">Password Visible</string>
     <string name="icon_password_hidden">Password Hidden</string>
     <string name="login_password_label">Password</string>
+    <string name="drug">Drug</string>
+    <string name="credential">Are you want to save login info!</string>
+    <string name="logOut">Log Out</string>
 </resources>

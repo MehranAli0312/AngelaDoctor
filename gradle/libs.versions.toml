@@ -4,7 +4,10 @@ kotlin = "2.0.20"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
+kotlinxCoroutinesTest = "1.8.1"
+mockVersion = "1.12.3"
 espressoCore = "3.6.1"
+kotlinReflect = "1.9.24"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.11.00"
@@ -18,8 +21,10 @@ shimmer = "1.0.3"
 toastic = "1.0.1"
 
 ksp = "2.0.20-1.0.24"
+hiltNavigationCompose = "1.2.0"
 hilt = "2.52"
-hilt-compiler = "1.2.0"
+datastore = "1.1.1"
+
 
 
 [libraries]
@@ -27,6 +32,8 @@ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = 
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
@@ -38,6 +45,9 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+#kotlin reflect
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlinReflect" }
 
 #compose navigation
 androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navVersion" }
@@ -56,9 +66,14 @@ shimmer-compose = { group = "com.valentinilk.shimmer", name = "compose-shimmer",
 toast = { group = "com.github.yagmurerdogan", name = "Toastic", version.ref = "toastic" }
 
 # Hilt Di
-dagger-hilt = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
-#dagger-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-compiler" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+
+# data store
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+androidx-datastore-core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "datastore" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
